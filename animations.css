@@ -1,0 +1,23 @@
+/* ==========================================================================
+   ANIMATIONS
+   All keyframe animations used across the dashboard.
+   ========================================================================== */
+
+/* Pulse — used on the tampering warning banner */
+@keyframes pulse {
+  0%,
+  100% { opacity: 1; }
+  50%  { opacity: 0.7; }
+}
+
+/* Fade-in — for modals and overlays (not yet implemented, identified as gap) */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Slide-up — for modal panels (not yet implemented, identified as gap) */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}

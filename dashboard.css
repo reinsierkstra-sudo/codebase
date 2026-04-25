@@ -1,0 +1,19 @@
+/* ==========================================================================
+   DASHBOARD — unified entry point
+   Import this single file into your HTML <head> to get the full system.
+
+   Load order matters:
+     1. tokens   — CSS custom properties (variables)
+     2. base     — reset + typography
+     3. layout   — container, sections, chart grids
+     4. components — tables, buttons, pills, modals, etc.
+     5. gantt    — Gantt chart
+     6. animations — @keyframe rules
+   ========================================================================== */
+
+@import url('tokens.css');
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('gantt.css');
+@import url('animations.css');
