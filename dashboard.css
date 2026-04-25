@@ -1,14 +1,11 @@
 /* ==========================================================================
    DASHBOARD — unified entry point
-   Import this single file into your HTML <head> to get the full system.
+   Import this single file in your HTML <head>.
 
-   Load order matters:
-     1. tokens   — CSS custom properties (variables)
-     2. base     — reset + typography
-     3. layout   — container, sections, chart grids
-     4. components — tables, buttons, pills, modals, etc.
-     5. gantt    — Gantt chart
-     6. animations — @keyframe rules
+   Load order is significant: tokens must come first so all custom
+   properties are defined before any rule that references them. The
+   individual partials do NOT self-import tokens; they rely on this file
+   to establish the cascade correctly.
    ========================================================================== */
 
 @import url('tokens.css');

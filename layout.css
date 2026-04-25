@@ -1,9 +1,7 @@
 /* ==========================================================================
    LAYOUT — container, header, sections, chart grids
-   Depends on: tokens.css
+   Requires: tokens.css loaded before this file (via dashboard.css)
    ========================================================================== */
-
-@import url('tokens.css');
 
 /* ---------- Page container ---------- */
 .container {
@@ -49,14 +47,6 @@
   border-radius: var(--radius-lg);
 }
 
-.isotope-section h2 {
-  color: var(--color-text-heading-h2);
-  border-bottom: 3px solid;
-  border-image: var(--color-brand-gradient-lr) 1;
-  padding-bottom: var(--space-2);
-  margin-bottom: var(--space-5);
-}
-
 /* ---------- Chart grids ---------- */
 .chart-row {
   display: grid;
@@ -95,7 +85,7 @@
   margin-bottom: var(--space-6);
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: var(--space-3);
   flex-wrap: wrap;
   padding: var(--space-1) 0;
 }
