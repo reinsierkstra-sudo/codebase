@@ -663,6 +663,69 @@ tr:hover {
   cursor: pointer;
 }
 
+/* ── Alarm overlay bar ───────────────────────────────────────────────────── */
+
+.alarm-overlay-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-alarm-bar);
+  background: var(--color-danger);
+  color: var(--color-text-white);
+  padding: var(--space-3) var(--space-5);
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  animation: alarm-pulse 1s ease-in-out infinite;
+}
+
+.alarm-overlay-bar.is-active {
+  display: flex;
+}
+
+/* ── Changelog entry (left-border type coding) ───────────────────────────── */
+
+.changelog-entry {
+  padding: var(--space-2) var(--space-4);
+  margin-bottom: var(--space-2);
+  border-left: 4px solid var(--color-border);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.changelog-entry--new      { border-left-color: var(--color-success); }
+.changelog-entry--modified { border-left-color: var(--color-warning); }
+.changelog-entry--deleted  { border-left-color: var(--color-danger); }
+.changelog-entry--running  { border-left-color: #ff5722; }
+
+/* ── Card (canonical — replaces .top-box, .table-container) ─────────────── */
+
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.card-header {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 2px solid var(--color-bg-muted);
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-navy);
+}
+
+/* Coloured-border card variants */
+.card--border-purple { border-left: 4px solid var(--color-brand-purple); }
+.card--border-blue   { border-left: 4px solid var(--color-text-heading-h2); }
+.card--border-cherry { border-left: 4px solid var(--color-brand-cherry); }
+
+.card--bg-muted { background: var(--color-bg-muted); }
+
 /* ── Tampering warning banner ────────────────────────────────────────────── */
 
 .tampering-banner {
