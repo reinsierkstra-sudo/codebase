@@ -376,6 +376,70 @@ tr:hover {
 .kpi-strip__item--danger  { color: var(--color-danger); }
 .kpi-strip__item--neutral { color: var(--color-text-primary); }
 
+/* ── Plating tile grid ───────────────────────────────────────────────────── */
+
+.tile-container {
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+}
+
+.tile {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  text-align: center;
+}
+
+.tile--critical { background: #ffebee; color: #c62828; }
+.tile--warning  { background: #fff3e0; color: #ef6c00; }
+
+/* ── Alert banner ────────────────────────────────────────────────────────── */
+
+.alert-banner {
+  padding: var(--space-4) var(--space-5);
+  border-radius: 12px;
+  margin-bottom: var(--space-5);
+}
+
+.alert-banner--warning {
+  background: #fff3cd;
+  border-left: 6px solid #ffc107;
+  color: #856404;
+}
+
+.alert-banner--danger {
+  background: #fde8e8;
+  border-left: 6px solid var(--color-danger);
+  color: var(--color-danger);
+}
+
+/* ── Status bar (last-update timestamp) ─────────────────────────────────── */
+
+.status-bar {
+  text-align: center;
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+  background: var(--color-bg-card);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+  margin-bottom: var(--space-4);
+}
+
+/* ── Sticky table column header (vertical scroll) ────────────────────────── */
+
+.col-sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-table-header);
+}
+
 /* ── Shift row colour-coding ─────────────────────────────────────────────── */
 
 .row--shift-ochtend { background: var(--color-shift-ochtend); }
