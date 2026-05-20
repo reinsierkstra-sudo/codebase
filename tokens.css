@@ -67,6 +67,43 @@
   --color-text-link:       #662678;
   --color-text-white:      #ffffff;
 
+  /* ---------- Extended brand colours ---------- */
+  --color-navy:         #283066;   /* Cycrevparts primary text / table headers */
+  --color-brand-cherry: #A51C70;   /* ingroei border (Productieplanning) */
+
+  /* ---------- Muted backgrounds ---------- */
+  --color-bg-muted:  #CFD9DE;   /* mink — border/divider (Rooster, Productieplanning) */
+  --color-bg-taupe:  #DBD9D6;   /* taupe — page/card body (Cycrevparts) */
+
+  /* ---------- Item-status colours (Cycrevparts physical parts) ---------- */
+  --color-status-in-bedrijf:    #2E7D32;
+  --color-status-gereviseerd:   #3875BA;   /* same as --color-text-heading-h2 */
+  --color-status-ongereviseerd: #E65100;
+  --color-status-in-revisie:    #662678;   /* same as --color-brand-purple */
+  --color-status-defect:        #C62828;   /* same as --color-danger (dark) */
+  --color-status-nieuw:         #00695C;
+  --color-status-mottenballen:  #78909C;
+  --color-status-onbekend:      #9E9E9E;
+  --color-status-afgevoerd:     #424242;
+
+  /* ---------- Shift row colours (Rooster) ---------- */
+  --color-shift-ochtend: #fffacd;   /* yellow — morning shift */
+  --color-shift-middag:  #f0f8ff;   /* light blue — afternoon shift */
+  --color-shift-nacht:   #f0fff0;   /* light green — night shift */
+
+  /* ---------- Row-state colours (Productieplanning) ---------- */
+  --color-row-active:  #fff9c4;   /* current production */
+  --color-row-warning: #ffeb3b;   /* ending soon */
+
+  /* ---------- Secondary table header ---------- */
+  --color-table-secondary: #5891d1;   /* lighter blue for maintenance tables */
+
+  /* ---------- System-ui font alternative ---------- */
+  --font-body-system: system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* ---------- Countdown display ---------- */
+  --font-size-countdown: 30px;
+
   /* VSM-specific */
   --color-vsm-header:   #1a5276;
   --color-vsm-below:    #c0392b;
@@ -159,6 +196,9 @@
   --z-gantt-header: 50;    /* sticky time header */
   --z-gantt-rows:   60;    /* sticky row-label header cell */
   --z-gantt-hover: 100;    /* hovered block */
-  --z-tooltip:    1000;
-  --z-modal:     10000;
+  --z-header-fixed:  100;    /* sticky/fixed page header */
+  --z-table-header:  10;     /* sticky th (vertical scroll) */
+  --z-alarm-bar:     20000;  /* alarm overlay — above modal */
+  --z-tooltip:       1000;
+  --z-modal:         10000;
 }
