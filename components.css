@@ -324,6 +324,37 @@ tr:hover {
   padding: 0;
 }
 
+/* Anchored close button — sits on white background, not gradient header */
+.modal-close--anchored {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  color: var(--color-brand-purple);
+}
+
+/* Gallery modal body — stacked images, scrollable */
+.modal-panel--gallery {
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal-img-gap {
+  height: 12px;
+}
+
+/* ── Divider ─────────────────────────────────────────────────────────────── */
+
+.divider {
+  border: none;
+  border-top: 2px solid var(--color-brand-pink);
+  width: 90%;
+  margin: var(--space-5) auto;
+}
+
+.divider--brand {
+  border-top-color: var(--color-brand-pink);
+}
+
 /* ── KPI stat strip (below tables) ──────────────────────────────────────── */
 
 .kpi-strip {
