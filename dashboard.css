@@ -14,3 +14,6 @@
 @import url('components.css');
 @import url('gantt.css');
 @import url('animations.css');
+@import url('forms.css');
+@import url('utilities.css');
+/* print.css, print-label.css, print-report.css are template-specific — import per page */
