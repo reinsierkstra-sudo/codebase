@@ -376,6 +376,50 @@ tr:hover {
 .kpi-strip__item--danger  { color: var(--color-danger); }
 .kpi-strip__item--neutral { color: var(--color-text-primary); }
 
+/* ── Shift row colour-coding ─────────────────────────────────────────────── */
+
+.row--shift-ochtend { background: var(--color-shift-ochtend); }
+.row--shift-middag  { background: var(--color-shift-middag); }
+.row--shift-nacht   { background: var(--color-shift-nacht); }
+
+/* ── Day section header (full-width branded separator) ───────────────────── */
+
+.section-header--day {
+  background: var(--color-brand-gradient);
+  color: var(--color-text-white);
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-5);
+  margin: var(--space-4) 0;
+}
+
+/* ── Secondary table (maintenance — lighter blue header) ─────────────────── */
+
+.table--secondary thead,
+.table--secondary th {
+  background: var(--color-table-secondary);
+}
+
+/* ── Bold plum number in a table cell ────────────────────────────────────── */
+
+.cell-value--plum {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-purple);
+}
+
+/* ── Stock alert cell states ─────────────────────────────────────────────── */
+
+.cell--critical {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.cell--warning {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
 /* ── Calendar / week table ───────────────────────────────────────────────── */
 
 .table--calendar {
