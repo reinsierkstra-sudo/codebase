@@ -376,6 +376,76 @@ tr:hover {
 .kpi-strip__item--danger  { color: var(--color-danger); }
 .kpi-strip__item--neutral { color: var(--color-text-primary); }
 
+/* ── Legend component ────────────────────────────────────────────────────── */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-meta);
+}
+
+.legend__swatch {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ── Countdown display ───────────────────────────────────────────────────── */
+
+.countdown-display {
+  text-align: center;
+  padding: var(--space-4) var(--space-5);
+}
+
+.countdown-display__value {
+  font-size: var(--font-size-countdown);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  display: block;
+}
+
+.countdown-display__label {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+}
+
+/* ── Isotope row border-left coding ─────────────────────────────────────── */
+
+.row--isotope-thallium  { border-left: 10px solid var(--color-isotope-thallium); }
+.row--isotope-gallium   { border-left: 10px solid var(--color-isotope-gallium); }
+.row--isotope-indium    { border-left: 10px solid var(--color-isotope-indium); }
+.row--isotope-rubidium  { border-left: 10px solid var(--color-isotope-rubidium); }
+.row--isotope-iodine    { border-left: 10px solid var(--color-isotope-iodine); }
+
+/* ── Production row status classes ──────────────────────────────────────── */
+
+.row--active  { background: var(--color-row-active); }
+.row--warning { background: var(--color-row-warning); }
+
+.row--urgent {
+  background: #ff5252;
+  color: var(--color-text-white);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.row--done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.row--pause { font-style: italic; }
+.row--info  { font-style: italic; color: var(--color-text-muted); }
+
 /* ── Plating tile grid ───────────────────────────────────────────────────── */
 
 .tile-container {
